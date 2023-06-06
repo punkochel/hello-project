@@ -1,11 +1,11 @@
 cmake_minimum_required(VERSION 3.5)
-project(HelloWorld)
+project(MessageProject)
 
-add_executable(HelloWorld main.cpp)
+add_executable(MessageProject main.cpp)
 
 add_library(MessageLib
 	SHARED
-	lib/hello.hpp
-	lib/hello.cpp
+	lib/message.cpp
 )
-target_link_libraries(HelloWorld MessageLib)
+
+target_link_libraries(MessageProject MessageLib)

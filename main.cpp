@@ -1,7 +1,9 @@
-#include "lib/hello.hpp"
+#include "lib/message.hpp"
 
 int main()
 {
-	sayHello();
+	IMessage* p = ComponentLoadPoint();
+	p->SendHelloMessage();
+	p->SendGoodbyeMessage();
 	return 0;
 }
